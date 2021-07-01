@@ -1,3 +1,16 @@
+# About This Project
+## Features ToDo
+
+### Listagem paginada:
+- [x]  ao carregar a página, já trazer uma listagem com 10 lojas por página ordenadas pelo nome da loja, 
+- [x]  seguindo o protótipo. As lojas com faturamento inferior ao configurado no campo “Faturamento mínimo esperado” devem estar em vermelho.
+
+### Pesquisa: 
+- [x]  Filtrar as lojas pelo nome, tanto na lista quanto no mapa, durante a digitação do texto digitado.
+
+### Mapa: 
+- [x]  exibir todas as lojas no mapa. As lojas com faturamento inferior ao mínimo esperado devem estar em vermelho.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

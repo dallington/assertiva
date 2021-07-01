@@ -1,0 +1,16 @@
+{
+    "javascript.validate.enable": false,
+    "javascript.format.enable": false,
+    "prettier.eslintIntegration": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.format.enable": true,
+    "eslint.options": {
+
+        "configFile": ".eslintrc.json",
+        "ignorePath": ".gitignore"
+    },
+    "editor.formatOnSave": true,
+
+}

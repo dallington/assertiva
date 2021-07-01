@@ -11,8 +11,10 @@ import {
   Typography,
   Toolbar,
   TextField,
+  InputAdornment,
 } from "@material-ui/core";
 import { Pagination } from "@material-ui/lab";
+import SearchIcon from "./assets/images/search.svg";
 import ListStore from "./components/ListStore";
 import Map from "./components/Map";
 import Stores from "./mocks/stores";
@@ -104,6 +106,14 @@ export default function App() {
               variant="outlined"
               value={searchStore}
               onChange={handleSearchStore}
+              InputProps={{
+                "aria-label": "search store",
+                endAdornment: (
+                  <InputAdornment position="start">
+                    <img src={SearchIcon} alt="search icon" />
+                  </InputAdornment>
+                ),
+              }}
             />
           </Grid>
           <Grid item xs={12} md={6} className={classes.wrapperRevenue}>
@@ -115,6 +125,12 @@ export default function App() {
               fullWidth
               onChange={handleMinimalRevenue}
               value={minimalRevenue}
+              InputProps={{
+                "aria-label": "Faturamento Mínimo Esperado",
+                startAdornment: (
+                  <InputAdornment position="start">R$</InputAdornment>
+                ),
+              }}
             />
           </Grid>
           <Grid item xs={12} md={6}>

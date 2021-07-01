@@ -9,7 +9,7 @@ export type StoreType = {
 
 export type ListStoreType = {
   stores: Array<StoreType>;
-  minimalRevenue: string;
+  minimalRevenue?: string;
 };
 
 export type MapType = {

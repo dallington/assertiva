@@ -6,8 +6,8 @@ import { MapType } from "../../types";
 import MapPin from "./MapPin";
 import { numberStringUnformatter } from "../../utils/numberStringFormatter";
 
+const GoogleAPIKey = process.env.REACT_APP_GOOGLE_API_KEY;
 function Map({ height = "100%", width = "100%", ...props }: MapType) {
-  const GoogleAPIKey = props.key || "AIzaSyC6munUy9XhZ5Z5frB4YmnrNvatlZJBytw";
   const minimalRevenueNumber = numberStringUnformatter(props.minimalRevenue);
   const isLowerRevenue = (revenue: number): boolean => {
     return revenue < minimalRevenueNumber;

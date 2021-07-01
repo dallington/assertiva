@@ -1,4 +1,6 @@
 # About This Project
+### Importante
+Para rodar o projeto, crie um .env com a key **REACT_APP_GOOGLE_API_KEY**, com o código enviado no pdf do teste.
 ## Features ToDo
 
 ### Listagem paginada:

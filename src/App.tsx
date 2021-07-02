@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function App() {
   const classes = useStyles();
   const { stores } = Stores;
-  const [minimalRevenue, setMinimalRevenue] = useState("");
+  const [minimalRevenue, setMinimalRevenue] = useState("15.000");
   const [searchStore, setSearchStore] = useState("");
   const { currentPage, ...paginator } = usePaginator(stores);
 
